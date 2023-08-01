@@ -6,10 +6,10 @@
 ● 同时，学生也可以主动接受别人发布的订单，并完成对应的任务。通过"阿拉灯"的首页推荐，学生可以便捷地找到跟自己技能和时间相匹配的任务，并获得相应的报酬。
 
 ● 主界面使用Fragment+ViewPager2：Fragment和ViewPager2实现主界面的多页面切换和管理。
+
 ● QQ登录API：接入QQ登录API实现用户登录功能，降低注册门槛。
+
 ● 封装Retrofit2+RxJava进行网络请求
-
-
 
 
 ![image](https://github.com/yimchen66/CampusService/assets/114284239/f78a25d9-f613-45cb-a1a3-c5ffedd7313b)
