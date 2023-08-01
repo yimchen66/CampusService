@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:background="#EFEFEF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_return"
+            android:layout_width="fill_parent"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:layout_height="45sp"
+            android:background="@color/themeColor"
+            app:navigationIcon="@drawable/back">
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.example.view.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.xuexiang.xui.widget.banner.widget.banner.SimpleImageBanner
+                    android:id="@+id/sib_simple_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:bb_indicatorGravity="RIGHT"
+                    app:bb_indicatorHeight="4dp"
+                    app:bb_indicatorWidth="10dp"
+                    app:bb_isTitleShow="false"
+                    app:bb_scale="0.5625" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:background="@color/backgroundcolor">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_whitecard"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="￥"
+                                android:textColor="@color/mainlist_goodtype"
+                                android:textSize="24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_price"
+                                android:text="22.02"
+                                android:textColor="@color/mainlist_goodtype"
+                                android:textSize="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/detail_good_type"
+                                android:text="代拿快递"
+                                style="@style/mainlist_goodtype"
+                                android:background="@drawable/shape_mainlist_goodtype"/>
+
+                            <TextView
+                                android:id="@+id/detail_good_intro"
+                                style="@style/mainlist_goodintroduct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="大大爱上的解放军wife害怕温柔结构化覆盖哥哥大大和任何大大大日太阳花如意大大大法文歌大"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_whitecard"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="订单内容"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_beizhu"
+                                android:text="雅虎好简单翻江倒简单翻江倒海太空舱杰克丹尼经费v聚"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="发起卖家"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_hostname"
+                                android:text="云烟成雨"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="创建时间"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_uploadtime"
+                                android:text="2022-10-20 22:55:33"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_whitecard"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="订单地址"
+                                android:layout_marginEnd="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_address"
+                                android:text="上海"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="截止时间"
+                                android:layout_marginRight="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_deadline"
+                                android:text="2022-10-20 22:55:33"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_whitecard"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="订单热度"
+                                android:layout_marginEnd="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/detail_good_hot"
+                                android:text="666"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>.
+
+                            <ImageView
+                                android:src="@drawable/hotest"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </com.example.view.MyScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/shape_line"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.textview.label.LabelButtonView
+                android:id="@+id/detail_receive"
+                android:text="确 认 接 单"
+                android:background="@drawable/shape_button"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_height="40dp"
+                app:label_backgroundColor="#C2185B"
+                app:label_distance="15dp"
+                app:label_height="18dp"
+                app:label_orientation="RIGHT_TOP"
+                app:label_text="推荐"
+                app:label_textSize="8sp"/>
+<!--            <Button-->
+<!--                android:id="@+id/detail_receive"-->
+<!--                android:text="确 认 接 单"-->
+<!--                android:background="@drawable/shape_button"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="3"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="18dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="40dp"/>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

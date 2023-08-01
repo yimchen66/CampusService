@@ -1,0 +1,189 @@
+@startuml
+
+title __FRAGMENT's Class Diagram__\n
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_FisPage {
+          ~ data : List<Carousel>
+          {static} - TAG : String
+          - bannerLayout : BannerLayout
+          - context : Context
+          - fragment : Fragment
+          - latitude : Double
+          - locationManager : LocationManager
+          - longitude : Double
+          - recyclerView : RecyclerView
+          - refreshLayout : RefreshLayout
+          - root : View
+          - search_text : EditText
+          - tv_location : TextView
+          + BlankFragment_FisPage()
+          + BlankFragment_FisPage()
+          + errorHandle()
+          + getTagList()
+          + init()
+          + onClick()
+          + onCreate()
+          + onCreateView()
+          + onItemClick()
+          + onLocationChanged()
+          + onProviderDisabled()
+          + onProviderEnabled()
+          + onStatusChanged()
+          - getLocation()
+          - getRecommendOrder()
+          - initBanner()
+          - jumpToCertainActivity()
+          - sendGetTagList()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_SecPage {
+          ~ context : Context
+          ~ root : View
+          {static} - AUTHORITIES : String
+          {static} - REQUEST_CODE_ALBUM : int
+          {static} - REQUEST_CODE_CAMERA : int
+          {static} - REQUEST_CODE_UCROP : int
+          {static} - TAG : String
+          - btn_submit : ButtonView
+          - cropFile : File
+          - curImagesCount : int
+          - et_orderContent : EditText
+          - et_orderTitle : MaterialEditText
+          - fileName : String
+          - image1 : RadiusImageView
+          - image2 : RadiusImageView
+          - image3 : RadiusImageView
+          - image4 : RadiusImageView
+          - image5 : RadiusImageView
+          - image6 : RadiusImageView
+          - latitude : Double
+          - list_CurImages : List<String>
+          - llLocation : LinearLayout
+          - locationManager : LocationManager
+          - longitude : Double
+          - photoUri : Uri
+          - tv_orderDeadline : TextView
+          - tv_orderLocation : TextView
+          - tv_orderMoney : TextView
+          - tv_orderType : TextView
+          + BlankFragment_SecPage()
+          + BlankFragment_SecPage()
+          + deleteViews()
+          + errorHandle()
+          + initView()
+          + onActivityResult()
+          + onClick()
+          + onCreate()
+          + onCreateView()
+          + onLocationChanged()
+          + onPause()
+          + onProviderDisabled()
+          + onProviderEnabled()
+          + onResume()
+          + onStart()
+          + onStatusChanged()
+          + submit()
+          - chooseTime()
+          - doCrop()
+          - getDestinationUri()
+          - getLocation()
+          - ifHaveAlbumPermission()
+          - ifHaveCameraPermission()
+          - openAlbum()
+          - openCamera()
+          - setMoney()
+          - setType()
+          - showBottomDialog()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_ThiPage {
+          {static} + PERSON_ACCEPT : int
+          {static} + PERSON_ALL : int
+          {static} + PERSON_FINISH : int
+          {static} + PERSON_LAUNCH : int
+          {static} + PERSON_TRANS : int
+          {static} + REQUEST_CODE_ALBUM : int
+          {static} + REQUEST_CODE_CAMERA : int
+          {static} + titles : String[]
+          {static} + urls : String[]
+          ~ root : View
+          {static} - AUTHORITIES : String
+          {static} - TAG : String
+          - context : Context
+          - cropFile : File
+          - fileName : String
+          - iv_personFigural : RadiusImageView
+          - ll_exit : LinearLayout
+          - ll_lookMore : LinearLayout
+          - ll_orderAccept : LinearLayout
+          - ll_orderFinish : LinearLayout
+          - ll_orderLaunch : LinearLayout
+          - ll_orderTrans : LinearLayout
+          - ll_personCredit : LinearLayout
+          - ll_personHistory : LinearLayout
+          - ll_personInfo : LinearLayout
+          - ll_personTransNumber : LinearLayout
+          - ll_personWallet : LinearLayout
+          - mData : List<BannerItem>
+          - mSimpleImageBanner : SimpleImageBanner
+          - photoUri : Uri
+          - tv_nickName : TextView
+          - tv_userName : TextView
+          + BlankFragment_ThiPage()
+          + BlankFragment_ThiPage()
+          + dialogHandle()
+          + onActivityResult()
+          + onCreate()
+          + onCreateView()
+          + userExit()
+          - doCrop()
+          - getDestinationUri()
+          - ifHaveAlbumPermission()
+          - ifHaveCameraPermission()
+          - initData()
+          - initView()
+          - jumpToCertainActivity()
+          - jumpToCertainActivity()
+          - openAlbum()
+          - openCamera()
+          - replacePhote()
+          - showBottomDialog()
+          - sib_simple_usage()
+      }
+    }
+  }
+  
+
+  com.example.fragment.BlankFragment_FisPage .up.|> android.location.LocationListener
+  com.example.fragment.BlankFragment_FisPage .up.|> android.view.View.OnClickListener
+  com.example.fragment.BlankFragment_FisPage .up.|> com.xuexiang.xui.widget.banner.recycler.BannerLayout.OnBannerItemClickListener
+  com.example.fragment.BlankFragment_FisPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_FisPage o-- com.example.view.HorizontalListView : horizontalListView
+  com.example.fragment.BlankFragment_FisPage o-- com.example.adapter.ItemAdapter : itemAdapter
+  com.example.fragment.BlankFragment_SecPage .up.|> android.location.LocationListener
+  com.example.fragment.BlankFragment_SecPage .up.|> android.view.View.OnClickListener
+  com.example.fragment.BlankFragment_SecPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_ThiPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_ThiPage o-- com.example.model.domain.User : user
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

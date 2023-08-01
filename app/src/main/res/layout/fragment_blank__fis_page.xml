@@ -1,0 +1,150 @@
+
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:background="#EFEFEF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradual_color_bg">
+
+            <LinearLayout
+                android:id="@+id/getlocation"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:clickable="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/location"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="1px"
+                    app:riv_is_circle="true"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="1px"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8"/>
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="10sp"
+                    android:text="点击获取您的位置"/>
+            </LinearLayout>
+            <include layout="@layout/search_layout" />
+
+        </LinearLayout>
+
+        <com.xuexiang.xui.widget.banner.recycler.BannerLayout
+            android:id="@+id/bl_horizontal"
+            app:bl_interval="3000"
+            android:layout_width="match_parent"
+            app:bl_indicatorMarginBottom="20dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-120dp"
+            app:bl_autoPlaying="true"
+            app:bl_centerScale="1.3"
+            app:bl_itemSpace="10dp"
+            app:bl_moveSpeed="1.8" />
+
+        <com.example.view.HorizontalListView
+            android:background="@drawable/card_theme"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="-10dp"
+            android:id="@+id/hlv"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:scrollbars="horizontal"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/recommend"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:text="今日推荐"
+                        android:layout_marginLeft="3dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/main_more_order"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="查看更多"
+                        android:textColor="@color/textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:src="@drawable/more"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.scwang.smart.refresh.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

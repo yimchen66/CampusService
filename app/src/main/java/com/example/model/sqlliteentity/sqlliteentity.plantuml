@@ -1,0 +1,307 @@
+@startuml
+
+title __SQLLITEENTITY's Class Diagram__\n
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Advertise {
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - url : String
+          + Advertise()
+          + equals()
+          + getId()
+          + getPicUrl()
+          + getUrl()
+          + hashCode()
+          + setId()
+          + setPicUrl()
+          + setUrl()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Carousel {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          + Carousel()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.HistoryTrack {
+          - historyTrack : String
+          - id : long
+          + HistoryTrack()
+          + HistoryTrack()
+          + equals()
+          + getHistoryTrack()
+          + getId()
+          + hashCode()
+          + setHistoryTrack()
+          + setId()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.NavigateAct {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - text : String
+          + NavigateAct()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + getText()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + setText()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.NavigateMain {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - text : String
+          + NavigateMain()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + getText()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + setText()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Orders {
+          - acceptId : String
+          - hostId : String
+          - id : String
+          - orderAddress : String
+          - orderContent : String
+          - orderCreateTime : String
+          - orderDeadline : String
+          - orderHot : Long
+          - orderIsDelete : Integer
+          - orderIsRecommend : Integer
+          - orderLabel : String
+          - orderMoney : Double
+          - orderPictures : String
+          - orderState : Integer
+          - orderTitle : String
+          {static} - serialVersionUID : long
+          - version : Integer
+          + Orders()
+          + Orders()
+          + equals()
+          + getAcceptId()
+          + getHostId()
+          + getId()
+          + getOrderAddress()
+          + getOrderContent()
+          + getOrderCreateTime()
+          + getOrderDeadline()
+          + getOrderHot()
+          + getOrderIsDelete()
+          + getOrderIsRecommend()
+          + getOrderLabel()
+          + getOrderMoney()
+          + getOrderPictures()
+          + getOrderState()
+          + getOrderTitle()
+          + getVersion()
+          + hashCode()
+          + setAcceptId()
+          + setHostId()
+          + setId()
+          + setOrderAddress()
+          + setOrderContent()
+          + setOrderCreateTime()
+          + setOrderDeadline()
+          + setOrderHot()
+          + setOrderIsDelete()
+          + setOrderIsRecommend()
+          + setOrderLabel()
+          + setOrderMoney()
+          + setOrderPictures()
+          + setOrderState()
+          + setOrderTitle()
+          + setVersion()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.RecommandOrder {
+          - hostFigureUrl : String
+          - hostName : String
+          - id : String
+          - money : double
+          - orderHot : Integer
+          - orderLabel : String
+          - orderPicture : String
+          - orderTitle : String
+          {static} - serialVersionUID : long
+          + RecommandOrder()
+          + RecommandOrder()
+          + equals()
+          + getHostFigureUrl()
+          + getHostName()
+          + getId()
+          + getMoney()
+          + getOrderHot()
+          + getOrderLabel()
+          + getOrderPicture()
+          + getOrderTitle()
+          + hashCode()
+          + setHostFigureUrl()
+          + setHostName()
+          + setId()
+          + setMoney()
+          + setOrderHot()
+          + setOrderLabel()
+          + setOrderPicture()
+          + setOrderTitle()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.TransOrder {
+          - acceptFinishTime : String
+          - acceptId : String
+          - acceptState : Integer
+          - acceptTime : String
+          - hostFinishTime : String
+          - hostId : String
+          - hostState : Integer
+          - id : String
+          - orderMoney : Double
+          {static} - serialVersionUID : long
+          + TransOrder()
+          + TransOrder()
+          + equals()
+          + getAcceptFinishTime()
+          + getAcceptId()
+          + getAcceptState()
+          + getAcceptTime()
+          + getHostFinishTime()
+          + getHostId()
+          + getHostState()
+          + getId()
+          + getOrderMoney()
+          + hashCode()
+          + setAcceptFinishTime()
+          + setAcceptId()
+          + setAcceptState()
+          + setAcceptTime()
+          + setHostFinishTime()
+          + setHostId()
+          + setHostState()
+          + setId()
+          + setOrderMoney()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.User {
+          - id : long
+          - user : String
+          + User()
+          + User()
+          + equals()
+          + getId()
+          + getUser()
+          + hashCode()
+          + setId()
+          + setUser()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  com.example.model.sqlliteentity.Advertise .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Advertise -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.Carousel .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Carousel -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.HistoryTrack .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.HistoryTrack -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.NavigateAct .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.NavigateAct -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.NavigateMain .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.NavigateMain -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.Orders .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Orders -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.RecommandOrder .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.RecommandOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.TransOrder .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.TransOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.User .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.User -up-|> org.litepal.crud.DataSupport
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

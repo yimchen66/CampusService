@@ -1,0 +1,326 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.BannerAdapter {
+          - context : Context
+          - onBannerItemClickListener : OnBannerItemClickListener
+          - urls : String[]
+          + BannerAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          + setOnBannerItemClickListener()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.BannerAdapter.BannerViewHolder {
+          ~ imageView : ImageView
+          + BannerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.HistoryItemAdapter {
+          - SCALE : float
+          - STANDARD_SCALE : double
+          {static} - TAG : String
+          - context : Context
+          - itemList : List<HistoryTrack>
+          - space : int
+          + HistoryItemAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          - execute()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.HistoryItemAdapter.ViewHolder {
+          ~ image : ImageView
+          ~ order_price : TextView
+          ~ order_title : TextView
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.ItemAdapter {
+          - SCALE : float
+          - STANDARD_SCALE : double
+          {static} - TAG : String
+          - context : Context
+          - itemList : List<RecommandOrder>
+          - space : int
+          + ItemAdapter()
+          + getItemCount()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+          - execute()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.ItemAdapter.ViewHolder {
+          ~ hot_pic : ImageView
+          ~ image : ImageView
+          ~ order_figure : ImageView
+          ~ order_hot : TextView
+          ~ order_nickname : TextView
+          ~ order_price : TextView
+          ~ order_title : TextView
+          + ViewHolder()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyAcceptListAdapter {
+          {static} - TAG : String
+          - context : Context
+          - list : List<UserAcceptOrder>
+          + MyAcceptListAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyAcceptListAdapter.ViewHolder {
+          ~ iv_goodimg : ImageView
+          ~ iv_touxiang : ImageView
+          ~ tv_accepttime : TextView
+          ~ tv_goodintro : TextView
+          ~ tv_goodprice : TextView
+          ~ tv_nickname : TextView
+          ~ tv_time : TextView
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyFinishListAdapter {
+          {static} - TAG : String
+          - context : Context
+          - list : List<DetailedOrderDTO>
+          + MyFinishListAdapter()
+          + compareDate()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyFinishListAdapter.ViewHolder {
+          ~ iv_goodimg : ImageView
+          ~ iv_touxiang : ImageView
+          ~ tv_acceptTime : TextView
+          ~ tv_goodintro : TextView
+          ~ tv_goodprice : TextView
+          ~ tv_nickname : TextView
+          ~ tv_state : TextView
+          ~ tv_time : TextView
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyLaunchListAdapter {
+          {static} - TAG : String
+          - context : Context
+          - list : List<Orders>
+          + MyLaunchListAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyLaunchListAdapter.ViewHolder {
+          ~ iv_goodimg : ImageView
+          ~ iv_touxiang : ImageView
+          ~ tv_goodintro : TextView
+          ~ tv_goodprice : TextView
+          ~ tv_nickname : TextView
+          ~ tv_time : TextView
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyTransHistoryAdapter {
+          ~ list : List<TransHistoryDTO>
+          - context : Context
+          + MyTransHistoryAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyTransListAdapter {
+          {static} - TAG : String
+          - context : Context
+          - list : List<DetailedOrderDTO>
+          + MyTransListAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyTransListAdapter.ViewHolder {
+          ~ iv_goodimg : ImageView
+          ~ iv_touxiang : ImageView
+          ~ tv_acceptTime : TextView
+          ~ tv_goodintro : TextView
+          ~ tv_goodprice : TextView
+          ~ tv_nickname : TextView
+          ~ tv_state : TextView
+          ~ tv_time : TextView
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyViewPagerAdapter {
+          ~ list_fragment : List<Fragment>
+          + MyViewPagerAdapter()
+          + createFragment()
+          + getItemCount()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.OrderListAdapter {
+          - context : Context
+          - list : List<Orders>
+          + OrderListAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.OrderListAdapter.ViewHolder {
+          ~ goodImg : ImageView
+          ~ goodIntroduct : TextView
+          ~ goodPrice : TextView
+          ~ goodType : TextView
+          ~ uploadTime : TextView
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.TagListViewAdapter {
+          ~ context : Context
+          ~ list : List<NavigateAct>
+          - screenWidth : int
+          + TagListViewAdapter()
+          + getCount()
+          + getItem()
+          + getItemId()
+          + getView()
+      }
+    }
+  }
+  
+
+  com.example.adapter.BannerAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.BannerAdapter +-down- com.example.adapter.BannerAdapter.BannerViewHolder
+  com.example.adapter.BannerAdapter.BannerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.adapter.HistoryItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.HistoryItemAdapter +-down- com.example.adapter.HistoryItemAdapter.ViewHolder
+  com.example.adapter.HistoryItemAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.adapter.ItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.ItemAdapter +-down- com.example.adapter.ItemAdapter.ViewHolder
+  com.example.adapter.ItemAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.adapter.MyAcceptListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyAcceptListAdapter +-down- com.example.adapter.MyAcceptListAdapter.ViewHolder
+  com.example.adapter.MyFinishListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyFinishListAdapter +-down- com.example.adapter.MyFinishListAdapter.ViewHolder
+  com.example.adapter.MyLaunchListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyLaunchListAdapter o-- com.example.model.domain.User : user
+  com.example.adapter.MyLaunchListAdapter +-down- com.example.adapter.MyLaunchListAdapter.ViewHolder
+  com.example.adapter.MyTransHistoryAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyTransListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyTransListAdapter +-down- com.example.adapter.MyTransListAdapter.ViewHolder
+  com.example.adapter.MyViewPagerAdapter -up-|> androidx.viewpager2.adapter.FragmentStateAdapter
+  com.example.adapter.OrderListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.OrderListAdapter +-down- com.example.adapter.OrderListAdapter.ViewHolder
+  com.example.adapter.TagListViewAdapter -up-|> android.widget.BaseAdapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

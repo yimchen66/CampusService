@@ -1,0 +1,400 @@
+@startuml
+
+title __DOMAIN's Class Diagram__\n
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Advertise {
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - url : String
+          + Advertise()
+          + equals()
+          + getId()
+          + getPicUrl()
+          + getUrl()
+          + hashCode()
+          + setId()
+          + setPicUrl()
+          + setUrl()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Carousel {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          + Carousel()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.HistoryTrack {
+          - id : String
+          - openId : String
+          - orderId : String
+          - orderMoney : Double
+          - orderPicture : String
+          - orderTitle : String
+          {static} - serialVersionUID : long
+          + HistoryTrack()
+          + HistoryTrack()
+          + equals()
+          + getId()
+          + getOpenId()
+          + getOrderId()
+          + getOrderMoney()
+          + getOrderPicture()
+          + getOrderTitle()
+          + hashCode()
+          + setId()
+          + setOpenId()
+          + setOrderId()
+          + setOrderMoney()
+          + setOrderPicture()
+          + setOrderTitle()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.NavigateAct {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - text : String
+          + NavigateAct()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + getText()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + setText()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.NavigateMain {
+          - activityName : String
+          - id : String
+          - picUrl : String
+          {static} - serialVersionUID : long
+          - text : String
+          + NavigateMain()
+          + equals()
+          + getActivityName()
+          + getId()
+          + getPicUrl()
+          + getText()
+          + hashCode()
+          + setActivityName()
+          + setId()
+          + setPicUrl()
+          + setText()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Orders {
+          - acceptId : String
+          - hostId : String
+          - id : String
+          - orderAddress : String
+          - orderContent : String
+          - orderCreateTime : String
+          - orderDeadline : String
+          - orderHot : Long
+          - orderIsDelete : Integer
+          - orderIsRecommend : Integer
+          - orderLabel : String
+          - orderMoney : Double
+          - orderPictures : String
+          - orderState : Integer
+          - orderTitle : String
+          {static} - serialVersionUID : long
+          - version : Integer
+          + Orders()
+          + Orders()
+          + equals()
+          + getAcceptId()
+          + getHostId()
+          + getId()
+          + getOrderAddress()
+          + getOrderContent()
+          + getOrderCreateTime()
+          + getOrderDeadline()
+          + getOrderHot()
+          + getOrderIsDelete()
+          + getOrderIsRecommend()
+          + getOrderLabel()
+          + getOrderMoney()
+          + getOrderPictures()
+          + getOrderState()
+          + getOrderTitle()
+          + getVersion()
+          + hashCode()
+          + setAcceptId()
+          + setHostId()
+          + setId()
+          + setOrderAddress()
+          + setOrderContent()
+          + setOrderCreateTime()
+          + setOrderDeadline()
+          + setOrderHot()
+          + setOrderIsDelete()
+          + setOrderIsRecommend()
+          + setOrderLabel()
+          + setOrderMoney()
+          + setOrderPictures()
+          + setOrderState()
+          + setOrderTitle()
+          + setVersion()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.RecommandOrder {
+          - hostFigureUrl : String
+          - hostName : String
+          - id : String
+          - money : double
+          - orderHot : Integer
+          - orderLabel : String
+          - orderPicture : String
+          - orderTitle : String
+          {static} - serialVersionUID : long
+          + RecommandOrder()
+          + RecommandOrder()
+          + equals()
+          + getHostFigureUrl()
+          + getHostName()
+          + getId()
+          + getMoney()
+          + getOrderHot()
+          + getOrderLabel()
+          + getOrderPicture()
+          + getOrderTitle()
+          + hashCode()
+          + setHostFigureUrl()
+          + setHostName()
+          + setId()
+          + setMoney()
+          + setOrderHot()
+          + setOrderLabel()
+          + setOrderPicture()
+          + setOrderTitle()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.TransOrder {
+          - acceptFinishTime : String
+          - acceptId : String
+          - acceptState : Integer
+          - acceptTime : String
+          - hostFinishTime : String
+          - hostId : String
+          - hostState : Integer
+          - id : String
+          - orderMoney : Double
+          {static} - serialVersionUID : long
+          + TransOrder()
+          + TransOrder()
+          + equals()
+          + getAcceptFinishTime()
+          + getAcceptId()
+          + getAcceptState()
+          + getAcceptTime()
+          + getHostFinishTime()
+          + getHostId()
+          + getHostState()
+          + getId()
+          + getOrderMoney()
+          + hashCode()
+          + setAcceptFinishTime()
+          + setAcceptId()
+          + setAcceptState()
+          + setAcceptTime()
+          + setHostFinishTime()
+          + setHostId()
+          + setHostState()
+          + setId()
+          + setOrderMoney()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.User {
+          - credit : Double
+          - figureUrl : String
+          - id : String
+          - label : String
+          - lastLogin : String
+          - location : String
+          - money : Double
+          - nickName : String
+          - password : String
+          {static} - serialVersionUID : long
+          - sex : String
+          - sumOrder : Integer
+          - userName : String
+          + User()
+          + equals()
+          + getCredit()
+          + getFigureUrl()
+          + getId()
+          + getLabel()
+          + getLastLogin()
+          + getLocation()
+          + getMoney()
+          + getNickName()
+          + getPassword()
+          {static} + getSerialVersionUID()
+          + getSex()
+          + getSumOrder()
+          + getUserName()
+          + hashCode()
+          + setCredit()
+          + setFigureUrl()
+          + setId()
+          + setLabel()
+          + setLastLogin()
+          + setLocation()
+          + setMoney()
+          + setNickName()
+          + setPassword()
+          + setSex()
+          + setSumOrder()
+          + setUserName()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.UserAcceptOrder {
+          - acceptTime : String
+          - hostUser : String
+          - id : long
+          - orders : String
+          + UserAcceptOrder()
+          + UserAcceptOrder()
+          + equals()
+          + getAcceptTime()
+          + getHostUser()
+          + getId()
+          + getOrders()
+          + hashCode()
+          + setAcceptTime()
+          + setHostUser()
+          + setId()
+          + setOrders()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.UserCreateOrder {
+          - id : long
+          - order : String
+          + UserCreateOrder()
+          + UserCreateOrder()
+          + equals()
+          + getId()
+          + getOrder()
+          + hashCode()
+          + setId()
+          + setOrder()
+          + toString()
+          # canEqual()
+      }
+    }
+  }
+  
+
+  com.example.model.domain.Advertise .up.|> java.io.Serializable
+  com.example.model.domain.Advertise -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.Carousel .up.|> java.io.Serializable
+  com.example.model.domain.Carousel -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.HistoryTrack .up.|> java.io.Serializable
+  com.example.model.domain.HistoryTrack -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.NavigateAct .up.|> java.io.Serializable
+  com.example.model.domain.NavigateAct -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.NavigateMain .up.|> java.io.Serializable
+  com.example.model.domain.NavigateMain -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.Orders .up.|> java.io.Serializable
+  com.example.model.domain.Orders -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.RecommandOrder .up.|> java.io.Serializable
+  com.example.model.domain.RecommandOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.TransOrder .up.|> java.io.Serializable
+  com.example.model.domain.TransOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.User .up.|> java.io.Serializable
+  com.example.model.domain.User -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.UserAcceptOrder .up.|> java.io.Serializable
+  com.example.model.domain.UserAcceptOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.UserCreateOrder .up.|> java.io.Serializable
+  com.example.model.domain.UserCreateOrder -up-|> org.litepal.crud.DataSupport
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

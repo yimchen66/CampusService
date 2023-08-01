@@ -1,0 +1,809 @@
+@startuml
+
+title __CAMPUSSERVICE.APP's Class Diagram__\n
+
+  namespace com.example {
+    class com.example.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example {
+    class com.example.MainActivity {
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityAllOrders {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityDetailOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityLogin {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityLoginUserName {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonCheckOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonCredit {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonHistory {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonInfo {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonLaunch {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityPersonWallet {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityTransHistory {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityTransNumber {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace activity {
+      class com.example.activity.ActivityWelcome {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.BannerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.HistoryItemAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.ItemAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyAcceptListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyFinishListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyLaunchListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyTransHistoryAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyTransListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.MyViewPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.OrderListAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace adapter {
+      class com.example.adapter.TagListViewAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace common {
+      class com.example.common.BaseActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace common {
+      class com.example.common.BaseApplication {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace common {
+      class com.example.common.BaseEntity {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace common {
+      class com.example.common.BaseFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace common {
+      enum ErrorCode {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace config.Interceptor {
+      class com.example.config.Interceptor.InterceptorUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace config.Interceptor {
+      class com.example.config.Interceptor.TokenInterceptor {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace config.MyFileProvider {
+      class com.example.config.MyFileProvider.ImageFileProvider {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_FisPage {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_SecPage {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace fragment {
+      class com.example.fragment.BlankFragment_ThiPage {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace http {
+      interface com.example.http.APIFunction {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace http {
+      class com.example.http.RetrofitFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace http {
+      namespace base {
+        abstract class com.example.http.base.BaseObserver {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace http {
+      namespace config {
+        class com.example.http.config.HttpConfig {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace http {
+      namespace config {
+        interface com.example.http.config.URLConfig {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Advertise {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Carousel {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.HistoryTrack {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.NavigateAct {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.NavigateMain {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.Orders {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.RecommandOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.TransOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.User {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.UserAcceptOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.domain {
+      class com.example.model.domain.UserCreateOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.dto {
+      class com.example.model.dto.DetailedOrderDTO {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.dto {
+      class com.example.model.dto.TransHistoryDTO {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.dto {
+      class com.example.model.dto.UpdateOrderDTO {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.dto {
+      class com.example.model.dto.UserDTO {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.dto {
+      class com.example.model.dto.UserTransOrderDTO {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.order {
+      class com.example.model.request.order.CreateOrderRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.order {
+      class com.example.model.request.order.PageOrderRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.order {
+      class com.example.model.request.order.UpdateOrderRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.trans {
+      class com.example.model.request.trans.TransOrderFinishRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.trans {
+      class com.example.model.request.trans.UserTransOrderRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.request.user {
+      class com.example.model.request.user.UpdateRequest {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Advertise {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Carousel {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.HistoryTrack {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.NavigateAct {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.NavigateMain {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.Orders {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.RecommandOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.TransOrder {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace model.sqlliteentity {
+      class com.example.model.sqlliteentity.User {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.BitmapUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.ChangeTabColor {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.MD5Util {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.ScreenUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.SharedPreferencesUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.TimeUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace utils {
+      class com.example.utils.UploadUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace view {
+      class com.example.view.HorizontalListView {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace view {
+      class com.example.view.MyListViewForScrollView {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace view {
+      class com.example.view.MyScrollView {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace widget {
+      class com.example.widget.DialogManager {
+      }
+    }
+  }
+  
+
+  namespace com.example {
+    namespace widget {
+      class com.example.widget.ProgressDialog {
+      }
+    }
+  }
+  
+
+  com.example.MainActivity .up.|> android.view.View.OnClickListener
+  com.example.MainActivity -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityAllOrders .up.|> android.view.View.OnClickListener
+  com.example.activity.ActivityAllOrders -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityAllOrders o-- com.example.adapter.OrderListAdapter : adapter
+  com.example.activity.ActivityDetailOrder -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityDetailOrder o-- com.example.model.dto.DetailedOrderDTO : detailedOrderDTO
+  com.example.activity.ActivityLogin .up.|> android.view.View.OnClickListener
+  com.example.activity.ActivityLogin -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityLogin o-- com.example.activity.ActivityLogin.BaseUiListener : mloginlistener
+  com.example.activity.ActivityLoginUserName .up.|> android.view.View.OnClickListener
+  com.example.activity.ActivityLoginUserName -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityPersonCheckOrder -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityPersonCheckOrder o-- com.example.model.domain.User : currentUser
+  com.example.activity.ActivityPersonCheckOrder o-- com.example.model.dto.DetailedOrderDTO : detailedOrderDTO
+  com.example.activity.ActivityPersonCredit -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityPersonHistory -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.activity.ActivityPersonHistory o-- com.example.adapter.HistoryItemAdapter : itemAdapter
+  com.example.activity.ActivityPersonInfo .up.|> android.location.LocationListener
+  com.example.activity.ActivityPersonInfo -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityPersonLaunch -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityPersonLaunch o-- com.example.model.domain.User : user
+  com.example.activity.ActivityPersonWallet -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityTransHistory -up-|> com.example.common.BaseActivity
+  com.example.activity.ActivityTransNumber -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.activity.ActivityWelcome -up-|> com.example.common.BaseActivity
+  com.example.adapter.BannerAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.HistoryItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.ItemAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.adapter.MyAcceptListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyFinishListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyLaunchListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyLaunchListAdapter o-- com.example.model.domain.User : user
+  com.example.adapter.MyTransHistoryAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyTransListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.MyViewPagerAdapter -up-|> androidx.viewpager2.adapter.FragmentStateAdapter
+  com.example.adapter.OrderListAdapter -up-|> android.widget.BaseAdapter
+  com.example.adapter.TagListViewAdapter -up-|> android.widget.BaseAdapter
+  com.example.common.BaseActivity -up-|> androidx.fragment.app.FragmentActivity
+  com.example.common.BaseApplication -up-|> org.litepal.LitePalApplication
+  com.example.common.BaseEntity o-- T : data
+  com.example.common.BaseFragment -up-|> androidx.fragment.app.Fragment
+  com.example.config.Interceptor.TokenInterceptor .up.|> okhttp3.Interceptor
+  com.example.config.MyFileProvider.ImageFileProvider -up-|> androidx.core.content.FileProvider
+  com.example.fragment.BlankFragment_FisPage .up.|> android.location.LocationListener
+  com.example.fragment.BlankFragment_FisPage .up.|> android.view.View.OnClickListener
+  com.example.fragment.BlankFragment_FisPage .up.|> com.xuexiang.xui.widget.banner.recycler.BannerLayout.OnBannerItemClickListener
+  com.example.fragment.BlankFragment_FisPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_FisPage o-- com.example.view.HorizontalListView : horizontalListView
+  com.example.fragment.BlankFragment_FisPage o-- com.example.adapter.ItemAdapter : itemAdapter
+  com.example.fragment.BlankFragment_SecPage .up.|> android.location.LocationListener
+  com.example.fragment.BlankFragment_SecPage .up.|> android.view.View.OnClickListener
+  com.example.fragment.BlankFragment_SecPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_ThiPage -up-|> com.example.common.BaseFragment
+  com.example.fragment.BlankFragment_ThiPage o-- com.example.model.domain.User : user
+  com.example.http.base.BaseObserver .up.|> io.reactivex.Observer
+  com.example.model.domain.Advertise .up.|> java.io.Serializable
+  com.example.model.domain.Advertise -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.Carousel .up.|> java.io.Serializable
+  com.example.model.domain.Carousel -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.HistoryTrack .up.|> java.io.Serializable
+  com.example.model.domain.HistoryTrack -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.NavigateAct .up.|> java.io.Serializable
+  com.example.model.domain.NavigateAct -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.NavigateMain .up.|> java.io.Serializable
+  com.example.model.domain.NavigateMain -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.Orders .up.|> java.io.Serializable
+  com.example.model.domain.Orders -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.RecommandOrder .up.|> java.io.Serializable
+  com.example.model.domain.RecommandOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.TransOrder .up.|> java.io.Serializable
+  com.example.model.domain.TransOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.User .up.|> java.io.Serializable
+  com.example.model.domain.User -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.UserAcceptOrder .up.|> java.io.Serializable
+  com.example.model.domain.UserAcceptOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.domain.UserCreateOrder .up.|> java.io.Serializable
+  com.example.model.domain.UserCreateOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.dto.DetailedOrderDTO o-- com.example.model.domain.User : acceptedUser
+  com.example.model.dto.DetailedOrderDTO o-- com.example.model.domain.User : hostUser
+  com.example.model.dto.DetailedOrderDTO o-- com.example.model.domain.Orders : orders
+  com.example.model.dto.DetailedOrderDTO o-- com.example.model.domain.TransOrder : transOrder
+  com.example.model.dto.UpdateOrderDTO .up.|> java.io.Serializable
+  com.example.model.dto.UpdateOrderDTO o-- com.example.model.domain.Orders : orders_ori
+  com.example.model.dto.UpdateOrderDTO o-- com.example.model.domain.Orders : orders_update
+  com.example.model.dto.UserDTO o-- com.example.model.domain.User : user
+  com.example.model.dto.UserTransOrderDTO o-- com.example.model.domain.User : opposeUser
+  com.example.model.dto.UserTransOrderDTO o-- com.example.model.domain.Orders : orders
+  com.example.model.dto.UserTransOrderDTO o-- com.example.model.domain.TransOrder : transOrder
+  com.example.model.request.order.CreateOrderRequest o-- com.example.model.domain.User : user
+  com.example.model.request.order.UpdateOrderRequest o-- com.example.model.domain.Orders : orders
+  com.example.model.request.user.UpdateRequest o-- com.example.model.domain.User : user
+  com.example.model.sqlliteentity.Advertise .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Advertise -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.Carousel .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Carousel -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.HistoryTrack .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.HistoryTrack -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.NavigateAct .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.NavigateAct -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.NavigateMain .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.NavigateMain -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.Orders .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.Orders -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.RecommandOrder .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.RecommandOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.TransOrder .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.TransOrder -up-|> org.litepal.crud.DataSupport
+  com.example.model.sqlliteentity.User .up.|> java.io.Serializable
+  com.example.model.sqlliteentity.User -up-|> org.litepal.crud.DataSupport
+  com.example.view.HorizontalListView -up-|> android.widget.AdapterView
+  com.example.view.MyListViewForScrollView -up-|> android.widget.ListView
+  com.example.view.MyScrollView -up-|> android.widget.ScrollView
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

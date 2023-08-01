@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="10"
+        android:layout_height="0dp">
+        <TextView
+            android:text="阿拉灯-校园互助"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/handnew"
+            />
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/edtext_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="用户名"
+            app:met_primaryColor="@color/themeColor"
+            app:met_floatingLabelText="用户名"
+            app:met_minCharacters="1"
+            app:met_maxCharacters="10"
+            app:met_allowEmpty="false"
+            app:met_clearButton="true"
+            app:met_helperText="用户名在1-10之间"
+            app:met_helperTextAlwaysShown="false"
+            app:met_floatingLabel="normal" />
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/edtext_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="密码"
+            app:met_primaryColor="@color/themeColor"
+            app:met_minCharacters="1"
+            app:met_maxCharacters="16"
+            app:met_allowEmpty="false"
+            app:met_floatingLabel="normal"
+            app:met_passWordButton="true"
+            app:met_isAsteriskStyle="true"
+            app:met_helperText="密码在1-16之间"
+            app:met_helperTextAlwaysShown="false"
+            app:met_floatingLabelText="密码" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                android:id="@+id/btn_username_login"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="登 录"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_button"
+                app:sb_radius="10dp" />
+            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                android:id="@+id/btn_username_register"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="注 册"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="36dp"
+                android:background="@drawable/shape_button_red"
+                app:sb_radius="10dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="我已认真阅读理解并同意认证服务协议"
+            android:textColor="@color/textcolor"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
